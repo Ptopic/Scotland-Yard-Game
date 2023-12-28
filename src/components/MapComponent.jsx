@@ -155,12 +155,14 @@ function MapComponent() {
 				/>
 			);
 		} else {
-			<Place
-				left={cordinate.left}
-				top={cordinate.top}
-				number={cordinate.num}
-				findMode={false}
-			/>;
+			return (
+				<Place
+					left={cordinate.left}
+					top={cordinate.top}
+					number={cordinate.num}
+					findMode={false}
+				/>
+			);
 		}
 	};
 
@@ -219,7 +221,6 @@ function MapComponent() {
 			/>
 			{/* ! put in seperate component */}
 			<div className="cords-container">
-				{/* Print regular places on map */}
 				{cordinates.map((cordinate, i) => piecesRenderingLogic(cordinate, i))}
 
 				{/* Print adjecent nodes places if pathFindingMode is true */}
