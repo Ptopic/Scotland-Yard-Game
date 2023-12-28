@@ -1,0 +1,213 @@
+.container {
+    position: relative;
+    width: calc(100%);
+    height: calc(100dvh - 100px);
+    /* margin: 50px 0; */
+    margin-top: 50px;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+}
+
+.top-row {}
+
+.path-finding-overlay {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.find-number-overlay {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.marker {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    border: 4px solid;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.marker:hover {
+    box-shadow: 1px 1px 5px rgba(#000, .5);
+}
+
+.marker-red {
+    background-color: rgba(238, 0, 0, .4);
+    border-color: var(--red);
+}
+
+.marker-yellow {
+    background-color: rgba(221, 221, 0, .4);
+    border-color: var(--green);
+}
+
+.marker-black {
+    background-color: rgba(51, 51, 51, .4);
+    border-color: var(--black);
+}
+
+
+.marker-blue {
+    background-color: rgba(0, 0, 255, .4);
+    border-color: var(--blue);
+}
+
+.action-buttons {
+    position: absolute;
+    top: -40px;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    display: flex;
+    width: calc(100% - 16rem);
+    z-index: 1;
+    margin-left: 16rem;
+}
+
+.action-buttons>button {
+    font-size: 16px;
+}
+
+.action-buttons>button:not(:last-child) {
+    margin-right: 20px;
+}
+
+.cords-container {}
+
+.find-modal {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.find-modal-content {
+    background: white;
+    padding: 1.4rem 2.6rem;
+    border-radius: .8rem;
+    font-size: 1.6rem;
+}
+
+.find-modal-nav {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.find-number-display {
+    padding: 1rem 0;
+    text-align: end;
+    font-size: 2.2rem;
+}
+
+.numbers-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.numbers-container>div>button {
+    width: 33%;
+    font-size: 2.2rem;
+}
+
+.numbers-container>div>button:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.numbers-container>div:first-child {
+    margin-top: 1rem;
+}
+
+.numbers-container>div:last-child {
+    display: flex;
+}
+
+.last-row button {
+    width: 66% !important;
+    font-size: 1.8rem;
+}
+
+.last-row svg {
+    width: 33%;
+}
+
+.find-btn {
+    font-size: 2.4rem;
+    margin-top: 2rem;
+}
+
+.switch-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.switch-container p {
+    font-size: 1.6rem;
+}
+
+.switch {
+    width: 40px;
+    height: 16px;
+    border: 1px solid red;
+    border-radius: 1.2rem;
+    margin-right: 1rem;
+    transition: all .2s ease-in-out;
+    position: relative;
+}
+
+.switch-active {
+    width: 40px;
+    height: 16px;
+    border: 1px solid #0F0;
+    border-radius: 1.2rem;
+    margin-right: 1rem;
+    transition: all .2s ease-in-out;
+    position: relative;
+}
+
+.switch-dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: red;
+    transition: all .2s ease-in-out;
+}
+
+.switch-dot-active {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #0F0;
+    transition: all .2s ease-in-out;
+}

@@ -1,0 +1,35 @@
+.place {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    /* Remove border later */
+    /* border: 2px solid; */
+    cursor: pointer;
+    position: absolute;
+    z-index: 20;
+
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.place:hover {
+    box-shadow: 1px 1px 5px rgba(#000, .5);
+}
+
+.place.findMode {
+    box-shadow: -2px -2px 25px 11px rgba(0, 255, 0, 1);
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: 200;
+}
+
+.place.startingPoint {
+    border: 2px solid;
+    z-index: 50;
+}
+
+.place.pathFindMode {
+    background: rgba(0, 255, 0, 0.25);
+    border: 2px solid;
+    z-index: 50;
+}
