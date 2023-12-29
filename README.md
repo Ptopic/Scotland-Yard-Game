@@ -13,28 +13,28 @@ Disclaimer!! - Project is built only for Ipad 9th gen, positions will not work o
 
 ## Home screen
 
-Home screen with no played pieces
-<img src=""/>
+Home screen with no players on board
+<img src="https://github.com/Ptopic/Scotland-Yard-Game/assets/45322112/4d2f3d55-54a1-4f92-9128-87ba76848b04"/>
 
 <br>
 
-Home screen with some played pieces
-<img src=""/>
+Home screen with players on board
+<img src="https://github.com/Ptopic/Scotland-Yard-Game/assets/45322112/11788181-9ad1-4a5e-b224-105fabb57139"/>
 
 <br>
 
 Mr.X Path finding feature
-<img src=""/>
+<img src="https://github.com/Ptopic/Scotland-Yard-Game/assets/45322112/5de0afc7-12ca-4f13-a0f9-bb95b7b6f9c1"/>
 
 ## Find Position Screen
 
 Find positiion screen
-<img src=""/>
+<img src="https://github.com/Ptopic/Scotland-Yard-Game/assets/45322112/64bd63ec-4f9e-44bf-9ae3-e8372b978a97"/>
 
 <br>
 
 Position found screen
-<img src=""/>
+<img src="https://github.com/Ptopic/Scotland-Yard-Game/assets/45322112/8caa4e32-d81f-42cb-8791-68eceb2861af"/>
 
 <br>
 
