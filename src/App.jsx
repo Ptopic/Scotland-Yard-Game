@@ -1,10 +1,10 @@
-import { useState, useEffect } from 'react';
-import MapComponent from './components/MapComponent';
+import React, { useState, useEffect } from 'react';
+import GameComponent from './components/GameComponent';
 
 function App() {
 	return (
 		<>
-			<MapComponent />
+			<GameComponent />
 		</>
 	);
 }
