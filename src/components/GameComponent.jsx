@@ -13,6 +13,9 @@ import PathFindingOverlay from './PathFindingOverlay';
 import FindNumberOverlay from './FindNumberOverlay';
 import Cordinates from './Cordinates';
 
+// Images
+import mapImage from '../assets/images/map2.png';
+
 function GameComponent() {
 	const [findModalOpen, setFindModalOpen] = useState(false);
 	const [findNumber, setFindNumber] = useState('0');
@@ -70,11 +73,7 @@ function GameComponent() {
 			/>
 			{/* Keep toaster and img */}
 			<Toaster />
-			<img
-				id="map"
-				src="https://i.imgur.com/smIY5l7.png"
-				onClick={(e) => mouseClick(e)}
-			/>
+			<img id="map" src={mapImage} onClick={(e) => mouseClick(e)} />
 			<Cordinates pathFindingMode={pathFindingMode} />
 			{findModalOpen && (
 				<FindModal
