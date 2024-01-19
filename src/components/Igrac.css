@@ -23,6 +23,7 @@
 .marker-yellow {
     background-color: rgba(221, 221, 0, .4);
     border-color: var(--yellow);
+    outline: 2px solid black;
 }
 
 .marker-black {
